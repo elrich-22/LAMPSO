@@ -1,0 +1,16 @@
+Options -Indexes
+
+# Bloquear acceso directo a archivos de configuración
+<FilesMatch "^(config|db)\.php$">
+    Require all denied
+</FilesMatch>
+
+# Headers de seguridad
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-Frame-Options "DENY"
+Header always set X-XSS-Protection "1; mode=block"
+Header always set Content-Security-Policy "default-src 'self'; style-src 'self' 'unsafe-inline'"
+Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Ocultar versión de Apache
+ServerSignature Off

@@ -40,10 +40,7 @@ $users = $db->query('SELECT id, username, email, created_at FROM users ORDER BY 
     <header>
         <span class="brand">Sistema LAMP</span>
         <nav>
-            <a href="dashboard.php" class="active">Usuarios</a>
-            <a href="info.php">Información</a>
             <a href="about.php">Acerca de</a>
-            <a href="logout.php">Cerrar sesión</a>
         </nav>
         <span class="user-info">Sesión: <span><?= htmlspecialchars($_SESSION['username']) ?></span></span>
     </header>
@@ -69,6 +66,7 @@ $users = $db->query('SELECT id, username, email, created_at FROM users ORDER BY 
                 <?php endforeach; ?>
             </tbody>
         </table>
+        <p style="margin-top: 1.2rem; font-size: 0.88rem;"><a href="about.php" style="color: #4a90d9;">about.php</a></p>
     </main>
     <footer>Proyecto LAMP &mdash; Seguridad Informática</footer>
 </body>

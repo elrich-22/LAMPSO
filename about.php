@@ -39,17 +39,11 @@ requireLogin();
         <span class="brand">Sistema LAMP</span>
         <nav>
             <a href="dashboard.php">Usuarios</a>
-            <a href="info.php">Información</a>
-            <a href="about.php" class="active">Acerca de</a>
             <a href="logout.php">Cerrar sesión</a>
         </nav>
         <span class="user-info">Sesión: <span><?= htmlspecialchars($_SESSION['username']) ?></span></span>
     </header>
     <main>
-        <div class="section">
-            <h2>El Proyecto</h2>
-            <p>Sistema web desarrollado como práctica académica para aplicar el stack LAMP (Linux, Apache, MySQL, PHP). Implementa autenticación de usuarios, gestión de sesiones y protección contra SQL Injection y XSS.</p>
-        </div>
 
         <div class="section">
             <h2>Tecnologías</h2>
@@ -60,16 +54,13 @@ requireLogin();
             <h2>Equipo</h2>
             <div class="team">
                 <div class="member">
-                    <strong>Alumno 1</strong>
-                    <span>Backend / BD</span>
+                    <strong>Julian Granillo</strong>
                 </div>
                 <div class="member">
-                    <strong>Alumno 2</strong>
-                    <span>Frontend / PHP</span>
+                    <strong>Gerber Estrada</strong>
                 </div>
                 <div class="member">
-                    <strong>Alumno 3</strong>
-                    <span>Servidor / Config</span>
+                    <strong>Mario Hernandez</strong>
                 </div>
             </div>
         </div>

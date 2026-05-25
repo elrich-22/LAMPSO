@@ -137,7 +137,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             <button type="submit" class="btn">Ingresar</button>
         </form>
-        <p class="hint">Usuario: admin &nbsp;|&nbsp; Contraseña: password123</p>
     </div>
 </body>
 </html>
